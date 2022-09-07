@@ -1,0 +1,92 @@
+    1  cd project-ml-microservice-kubernetes/
+    2  bash resize.sh 100
+    3  make setup
+    4  source ~/.devops/bin/activate
+    5  make install
+    6  make lint
+    7  make install
+    8  ls
+    9  mv hadolint-Linux-x86_64 hadolint
+   10  chmod +x hadolint 
+   11  ls
+   12  make setup
+   13  deactivate
+   14  make setup
+   15  source ~/.devops/bin/activate
+   16  make install
+   17  make lint
+   18  cd project-ml-microservice-kubernetes/
+   19  make lint
+   20  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   21  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   22  curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/darwin/amd64/kubectl
+   23  ls
+   24  curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/linux/amd64/kubectl
+   25  ls
+   26  curl -o kubectl.sha256 https://s3.us-west-2.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/linux/amd64/kubectl.sha256
+   27  openssl sha1 -sha256 kubectl
+   28  chmod +x ./kubectl
+   29  mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
+   30  echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
+   31  kubectl version --short --client
+   32  make setup
+   33  source ~/.devops/bin/activate
+   34  make install
+   35  clear
+   36  make lint
+   37  cd project-ml-microservice-kubernetes/
+   38  make setup
+   39  source ~/.devops/bin/activate
+   40  bash make_prediction.sh 
+   41  bash run_docker.sh 
+   42  touch docker_out.txt
+   43  bash upload_docker.sh 
+   44  clear
+   45  touch kubernetes.out.txt
+   46  minikube start
+   47  bash run_kubernetes.sh 
+   48  bash run_kubernetes.sh
+   49  cd project-ml-microservice-kubernetes/
+   50  bash make_prediction.sh 
+   51  make setup
+   52  source ~/.devops/bin/activate
+   53  bash make_prediction.sh 
+   54  mkdir .circleci
+   55  cd .circleci/
+   56  touch config.yml
+   57  cd ..
+   58  git init
+   59  git branch -M main
+   60  git add -A
+   61  git commit -m "Initial commit"
+   62  git config --local user.email ayogublossomisrael@gmail.com
+   63  git config --local user.name Vanbliser
+   64  git remote add upstream https://github.com/Vanbliser/DevOps_Microservices.git
+   65  git push -u upstream
+   66  git push --set-upstream upstream main
+   67  ls -a
+   68  cd .git
+   69  ls -a
+   70  vi config
+   71  cd ..
+   72  git push --set-upstream upstream main
+   73  git add -A
+   74  cd project-ml-microservice-kubernetes/
+   75  git add -A
+   76  git commit -m "Remove unwanted files"
+   77  git push
+   78  ls 
+   79  ls -a
+   80  cd .circleci/
+   81  ls
+   82  git add -A
+   83  git coomit -m "Add config.yml content"
+   84  git commit -m "Add config.yml content"
+   85  git push
+   86  git add -A
+   87  git commit -m "Add status badge"
+   88  git add -A
+   89  git commit -m "Add status badge"
+   90  git push
+   91  history
+   92  history > cmd.txt
