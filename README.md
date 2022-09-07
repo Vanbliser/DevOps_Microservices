@@ -23,9 +23,9 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 
 ** Ensure that the following are installed **
 
-* Docker
-* Hadolint
-* Kubernetes (Minikube)
+* __Docker__
+* __Hadolint__
+* __Kubernetes (Minikube)__
 * 
 
 ## Instructions on how to run the Python scripts and web app
@@ -49,5 +49,5 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * run_kubernetes: A script to run kubernetes
 * upload_docker: A script to push your docker container/image to DockerHub
 
-**NOTE: The (docker_out.txt) and the (kubernetes_out.txt) outputs are in the folder Output_txt_files
+**NOTE: The (docker_out.txt) and the (kubernetes_out.txt) outputs are in the folder Output_txt_files**
 
