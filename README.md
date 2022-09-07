@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Vanbliser/DevOps_Microservices/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Vanbliser/DevOps_Microservices/tree/master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Vanbliser/DevOps_Microservices/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Vanbliser/DevOps_Microservices/tree/main)
 
 ## Project Overview
 
